@@ -99,7 +99,7 @@ const uptade = () => {
     if (ball.y + ball.r > cvs.height || ball.y - ball.r < 0)
         ball.velocityY = -ball.velocityY
 
-    let comLvl = 1
+    let comLvl = 0.1
     com.y += (ball.y - (com.y + com.h / 2)) * comLvl
 
     let player = (ball.x < cvs.width / 2) ? user : com
